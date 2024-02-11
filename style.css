@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+  background-color: #1e1e1e;
+  transition: 0.3s;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  transition: 0.3s;
+}
+
+.header h1 {
+  font-size: 46px;
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header p {
+  font-size: 20px;
+  color: rgb(175, 175, 175);
+}
+
+.fill {
+  flex: 1;
+}
+
+.lightmode {
+  display: flex;
+  align-items: center;
+}
+
+#button {
+  display: none;
+}
+
+.lightmode label {
+  width: 48px;
+  height: 24px;
+  border-radius: 24px;
+  background: rgb(197, 197, 197);
+  border: none;
+  cursor: pointer;
+}
+
+.lightmode label:before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 3px;
+  transition: 0.3s;
+}
+
+#button:checked + label::before {
+  transform: translateX(24px);
+  background-color: #1e1e1e;
+}
+
+.light {
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+
+.light h1 {
+  color: #1e1e1e;
+}
+
+.light p {
+  color: #1e1e1e;
+}
+
+.light .bio h1 {
+  color: #1e1e1e;
+}
+
+.light .bio p {
+  color: #1e1e1e;
+}
+
+.light .bio span {
+  color: #858585;
+}
+
+.light .header {
+  background-color: #dddddd;
+}
+
+.light .header p {
+  color: #1e1e1e;
+}
+
+.light .footer {
+  background-color: #dddddd;
+}
+
+.light .footer p {
+  color: #1e1e1e;
+}
+
+.light form {
+  color: #1e1e1e;
+}
+
+.light .card {
+  background-color: #dddddd;
+}
+
+.light .card-type {
+  color: #1e1e1e;
+}
+
+.light .menu {
+  background-color: #ebebeb;
+}
+
+.light .menu a {
+  color: #1e1e1e;
+}
+
+.light .menu-icon span {
+  background-color: #1e1e1e;
+}
+
+.img-daftpunk {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu {
+  height: 330px;
+  width: 250px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: -250px;
+  background-color: rgb(26, 26, 26);
+  padding-top: 60px;
+  transition: right 0.5s;
+}
+
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #838383;
+}
+
+.menu ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu.active {
+  right: 0px;
+}
+
+.menu .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.open {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0px 0px 6px 30px;
+}
+
+.img-daftpunk2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.swiper-slide {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+body .swiper-pagination-bullet {
+  background: white;
+}
+
+body .swiper-pagination-bullet-active {
+  background: gold;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev {
+  color: gold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 78px;
+  color: gold !important;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 36px;
+  color: gold !important;
+}
+
+.slide-hw {
+  background-image: url("./images/hw.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-di {
+  background-image: url("./images/di.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-haa {
+  background-image: url("./images/haa.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-ram {
+  background-image: url("./images/ram.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-title {
+  color: white;
+  font-size: 46px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.bio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 300px;
+}
+
+.bio h1 {
+  color: white;
+  font-size: 46px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.bio p {
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: light;
+  text-align: center;
+}
+
+.bio span {
+  color: lightgray;
+  font-size: 12px;
+}
+
+.bio button {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 16px 22px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+  background-color: gold;
+}
+
+.bio button:hover {
+  background-color: goldenrod;
+}
+
+.disco-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 30px;
+}
+
+.disco-button button {
+  padding: 16px 22px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+  background-color: gold;
+}
+
+.disco-button button:hover {
+  background-color: goldenrod;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  padding: 16px 30px;
+  display: flex;
+  transition: 0.3s;
+}
+
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: lightgray;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.img-logo {
+  flex: 1;
+}
+
+form {
+  width: 80%;
+  margin: 80px auto;
+  border: 1px solid rgba(153, 153, 153, 0.6);
+  color: white;
+}
+
+form > div {
+  margin: 60px 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+button {
+  border: none;
+  background-color: gold;
+  padding: 16px 22px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  padding: 10px 32px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
+.message-error {
+  width: 80%;
+  margin: 80px auto;
+  border: 1px solid rgb(212, 42, 0);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  display: none;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success {
+  width: 80%;
+  margin: 80px auto;
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.portfolio-elements {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 0 !important;
+}
+
+.card {
+  width: 30%;
+  background-color: rgb(17, 17, 17);
+}
+
+.card-header {
+  padding: 20px 40px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-type {
+  font-size: 14px;
+  color: #dddddd;
+  margin-top: 6px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filters ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filters li {
+  margin-top: 50px;
+  padding: 16px 22px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1e1e1e;
+  background-color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.filters li:hover {
+  background-color: #dddddd;
+}
+
+.filters li.active:hover {
+  background-color: goldenrod;
+}
+
+.filters li.active {
+  background-color: gold;
+}

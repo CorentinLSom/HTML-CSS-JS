@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftpunk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header-title">
+        <p>La French Touch</p>
+        <a href="./index.html">
+          <h1>DAFTPUNK</h1>
+        </a>
+      </div>
+      <div class="fill"></div>
+      <div class="lightmode">
+        <input type="checkbox" id="button" />
+        <label for="button"></label>
+      </div>
+      <div id="myMenu" class="menu">
+        <a id="closeButton" href="#" class="close">x</a>
+        <ul>
+          <li><a href="./index.html">Acceuil</a></li>
+          <li><a href="./biography.html">Biographie</a></li>
+          <li><a href="./discography.html">Discographie</a></li>
+          <li><a href="./forms.html">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="open">
+        <a id="openButton" href="#">
+          <span class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <div class="bio">
+      <h1>Souscrire à la Newsletter Daftpunk</h1>
+    </div>
+
+    <div class="message-error">
+      <ul></ul>
+    </div>
+
+    <div class="message-success">
+      Formulaire envoyé avec succès ! Vous recevrez les dernières informations
+      sur Daftpunk dès qu'elles sortiront.
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="choice"
+          >Quelles informations souhaitez-vous recevoir ?</label
+        >
+        <select name="choice" id="choice">
+          <option value="">---Veuillez sélectionner une option---</option>
+          <option value="as">Sorties albums & singles</option>
+          <option value="album">Sorties albums uniquement</option>
+          <option value="actu">Actualités Daftpunk uniquement</option>
+          <option value="all">Toutes les actualités et sorties</option>
+        </select>
+      </div>
+
+      <button type="submit">Souscrire</button>
+    </form>
+
+    <footer class="footer">
+      <div class="img-logo">
+        <img src="./images/dplogo.png" alt="logo daftpunk" />
+      </div>
+      <p>Corentin Le Sommer IIM G9 2024</p>
+    </footer>
+
+    <script src="forms.js"></script>
+  </body>
+</html>

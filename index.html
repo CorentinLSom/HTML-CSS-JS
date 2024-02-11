@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftpunk</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div>
+        <p>La French Touch</p>
+        <a href="./index.html">
+          <h1>DAFTPUNK</h1>
+        </a>
+      </div>
+      <div class="fill"></div>
+      <div class="lightmode">
+        <input type="checkbox" id="button">
+        <label for="button"></label>
+      </div>
+      <div id="myMenu" class="menu">
+        <a id="closeButton" href="#" class="close">x</a>
+        <ul>
+          <li><a href="./index.html">Acceuil</a></li>
+          <li><a href="./biography.html">Biographie</a></li>
+          <li><a href="./discography.html">Discographie</a></li>
+          <li><a href="./forms.html">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="open">
+        <a id="openButton" href="#">
+          <span class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <div class="img-daftpunk">
+      <img src="./images/daftpunk.jpg" alt="Daftpunk" />
+    </div>
+    <div class="bio">
+      <h1>Plonger dans l'histoire du duo français iconique</h1>
+      <p>
+        Daft Punk est un groupe français de musique électronique, originaire de
+        Paris. Composé de Thomas Bangalter et Guy-Manuel de Homem-Christo, le
+        groupe est actif entre 1993 et 2021 et participe à la création et à la
+        démocratisation du mouvement de musique électronique baptisé French
+        touch. Le duo fait partie des artistes français s'exportant le mieux à
+        l'étranger et ce, depuis la sortie de leur premier véritable succès, Da
+        Funk, en 1995...
+      </p>
+      <a href="./biography.html">
+        <button>En apprendre plus</button>
+      </a>
+    </div>
+
+    <div class="swiper mon-slider">
+      <h1 class="main-title">Les albums incontournables</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-hw">
+          <p class="subtitle">1997</p>
+          <p class="title">Homework</p>
+        </div>
+        <div class="swiper-slide slide-di">
+          <p class="subtitle">2001</p>
+          <p class="title">Discovery</p>
+        </div>
+        <div class="swiper-slide slide-haa">
+          <p class="subtitle">2005</p>
+          <p class="title">Human After All</p>
+        </div>
+        <div class="swiper-slide slide-ram">
+          <p class="subtitle">2013</p>
+          <p class="title">Random Access Memories</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="disco-button">
+      <a href="./discography.html">
+        <button>Découvrir la discographie</button>
+      </a>
+    </div>
+
+    <div class="bio">
+      <h1>Rester informé des actualités de Daftpunk</h1>
+      <p>
+        Inscrivez-vous à la Newsletter pour recevoir les actualités de Daftpunk
+        en temps réels.
+      </p>
+      <span
+        >(Vous pouvez attendre longtemps, ils ne sont pas prêt de revenir, à
+        notre grand désespoir...).</span
+      >
+      <a href="./forms.html">
+        <button>Souscrire à la Newsletter</button>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <div class="img-logo">
+        <img src="./images/dplogo.png" alt="logo daftpunk" />
+      </div>
+      <p>Corentin Le Sommer IIM G9 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
